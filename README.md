@@ -1,2 +1,4 @@
 # streamlitbot
-* axel
+* Tasnim GHALI
+* Meriam MAALEJ
+* Talel BEN AYED
