@@ -19,6 +19,13 @@ option = st.selectbox(
 
 st.write('Your favorite color is ', option)
 
+#ajout d'un slider
+st.subheader('Range slider')
+
+values = st.slider(
+     'Select a range of max_tokens',
+     0.0, 500.0, (20.0, 80.0))
+st.write(' max_tokens:', values)
 
 # Initialize chat history
 if "messages" not in st.session_state:
