@@ -10,6 +10,16 @@ client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 if "openai_model" not in st.session_state:
     st.session_state["openai_model"] = "gpt-3.5-turbo"
 
+# ajout d'un selectbox
+st.header('st.selectbox')
+
+option = st.selectbox(
+     'Choisir un type de modéle de GPT',
+     ('gpt-3.5-turbo', 'gpt-3.5-turbo-instruct', 'gpt-3.5-turbo-1106', 'gpt-3.5-turbo-0125'))
+
+st.write('Your favorite color is ', option)
+
+
 # Initialize chat history
 if "messages" not in st.session_state:
     st.session_state.messages = []
